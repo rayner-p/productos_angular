@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "tienda-ups": {
+      "hosting": {
+        "tienda_ups": [
+          "tienda-ups"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "tienda-ups"
+  }
+}

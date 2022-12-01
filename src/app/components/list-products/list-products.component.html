@@ -1,0 +1,29 @@
+<mat-card class="listar">
+  <mat-list>
+    <div mat-subheader>
+      <h1 style="font-size: 20px; color: coral;">Productos</h1>
+    </div>
+    <mat-list-item *ngFor="let product of products | async ">
+      <div mat-line style="color:rgb(32, 35, 35)"> Nombre<br>
+        <b style="font-size: 27px;"> {{product.nombre}} </b>
+      </div>
+      <br>
+      <div mat-line style="color:rgb(15, 15, 15)">Precio <br>
+        <b style="font-size: 26px;">{{product.precio}}</b>
+      </div>
+      <br>
+      <div mat-line style="color:rgb(40, 39, 39)">Categoria <br>
+        <b style="font-size: 26px;">{{product.categoria}}</b>
+      </div>
+      <br>
+      <div mat-line style="color:rgb(16, 15, 15)">Stock <br>
+        <b style="font-size: 26px;">{{product.stock}}</b>
+      </div>
+      <br>
+    </mat-list-item>
+
+  </mat-list>
+  <br>
+
+  <br>
+</mat-card>

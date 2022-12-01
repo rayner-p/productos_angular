@@ -100,8 +100,21 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "tienda_ups:build:production",
+            "firebaseProject": "tienda-ups",
+            "firebaseHostingSite": "tienda-ups"
+          }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "94351112-9c9a-48c8-8dbd-64bb5bac07c0"
   }
 }
